@@ -47,16 +47,25 @@ a {
 }
 
 /* main */
-main {
+main .main_wrapper {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 main .item_image {
   width: 400px;
-  /* display: none; display flexの子要素の画像縮小防磁 */
-  flex-shrink: 0;
+  /* display: none; display flexの子要素の画像縮小防止 */
+  flex-shrink: 0; /* shrinkしないという設定でも可 */
+  margin-right: 40px;
 }
 main .item_image img {
   width: 100%;
+}
+main .item_description_title {
+  border-top: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
 }
 /* responsive */
 @media screen and (max-width: 896px) {
@@ -66,7 +75,14 @@ main .item_image img {
     width: 100%;
   }
   /* main */
-  main .item_image img {
+  main .main_wrapper {
+    flex-direction: column;
+  }
+  main .item_image {
     width: 100%;
+    margin: 0 0 10px 0;
+  }
+  main .item_image img {
+    /* width: 100%; */
   }
 }
