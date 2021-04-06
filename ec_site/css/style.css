@@ -52,7 +52,8 @@ main {
 }
 main .item_image {
   width: 400px;
-  flex: none;
+  /* display: none; display flexの子要素の画像縮小防磁 */
+  flex-shrink: 0;
 }
 main .item_image img {
   width: 100%;
