@@ -101,6 +101,30 @@ main .order_table .quantity_select,
 main .order_table .quantity {
   border-right: none;
 }
+main .order_table .quantity_select select {
+  border: 1px solid #c3c3c3;
+  width: 100%;
+}
+main .add_button {
+  background-color: grey;
+  color: white;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+}
+main .size_table {
+  width: 100%;
+}
+main .size_table,
+main .size_table td {
+  border: #c3c3c3 1px solid;
+}
+main .size_table th {
+  background-color: #c3c3c3;
+  font-weight: normal;
+}
 /* footer */
 footer p {
   font-size: 10px;
