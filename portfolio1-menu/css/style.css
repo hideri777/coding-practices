@@ -1,0 +1,47 @@
+/* common */
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 4%;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 4%;
+  height: 270px;
+}
+.header .header_title {
+  font-weight: 300;
+  font-size: 24px;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  margin-left: 20px;
+}
+.header nav ul li .icon {
+  width: 20px;
+}
+
+/* スマホ */
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 24px;
+    height: auto;
+  }
+}
